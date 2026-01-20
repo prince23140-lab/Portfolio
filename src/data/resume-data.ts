@@ -7,7 +7,7 @@ export const RESUME_DATA = {
     "Motivated Software Engineering student with hands-on IT experience and strong foundations in database design, SQL, and computer networking.",
   summary:
     "Motivated Software Engineering student with hands-on IT experience and strong foundations in database design, SQL, and computer networking. Skilled in troubleshooting systems, data analysis with Power BI, and web development. Eager to apply technical skills and expand expertise in PostgreSQL, data synchronization, and enterprise-level database management.",
-  avatarUrl: "/images/portrait-1.jpg",
+  avatarUrl: "https://prince23140-lab.github.io/Portfolio/images/portrait-1.jpg",
   personalWebsiteUrl: "https://princenziza.com",
   contact: {
     email: "princenziza23140@gmail.com",
@@ -131,10 +131,10 @@ export const RESUME_DATA = {
   images: [
     "https://prince23140-lab.github.io/Portfolio/images/portrait-1.jpg",
     "https://prince23140-lab.github.io/Portfolio/images/portrait-2.jpg",
-    "/images/new-portrait-3.jpg",
-    "/images/portrait-1.jpg",
-    "/images/portrait-2.jpg",
-    "/images/portrait-3.jpg",
-    "/images/portrait-4.jpg",
+    "https://prince23140-lab.github.io/Portfolio/images/new-portrait-3.jpg",
+    "https://prince23140-lab.github.io/Portfolio/images/new-portrait-1.jpg",
+    "https://prince23140-lab.github.io/Portfolio/images/new-portrait-2.jpg",
+    "https://prince23140-lab.github.io/Portfolio/images/portrait-3.jpg",
+    "https://prince23140-lab.github.io/Portfolio/images/portrait-4.jpg",
   ],
 };
