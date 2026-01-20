@@ -4,13 +4,37 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Gitlab } from "lucide-react";
 import { RESUME_DATA } from "@/data/resume-data";
+import { useState } from "react";
 
 export function Contact() {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
+
     const socialIcons: Record<string, React.ReactNode> = {
         GitHub: <Github className="w-5 h-5" />,
         LinkedIn: <Linkedin className="w-5 h-5" />,
         X: <Twitter className="w-5 h-5" />,
         GitLab: <Gitlab className="w-5 h-5" />,
+    };
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { id, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [id]: value
+        }));
+    };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        const { name, email, message } = formData;
+        const subject = `Portfolio Contact from ${name}`;
+        const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+
+        window.location.href = `mailto:${RESUME_DATA.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     };
 
     return (
@@ -89,12 +113,14 @@ export function Contact() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                     >
-                        <form className="bg-card p-8 rounded-2xl shadow-sm border border-border/50 space-y-6">
+                        <form onSubmit={handleSubmit} className="bg-card p-8 rounded-2xl shadow-sm border border-border/50 space-y-6">
                             <div className="space-y-2">
                                 <label htmlFor="name" className="text-sm font-medium">Name</label>
                                 <input
                                     id="name"
                                     type="text"
+                                    value={formData.name}
+                                    onChange={handleChange}
                                     placeholder="Your Name"
                                     className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                                     required
@@ -106,6 +132,8 @@ export function Contact() {
                                 <input
                                     id="email"
                                     type="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
                                     placeholder="prince@example.com"
                                     className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                                     required
@@ -116,6 +144,8 @@ export function Contact() {
                                 <label htmlFor="message" className="text-sm font-medium">Message</label>
                                 <textarea
                                     id="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
                                     placeholder="How can I help you?"
                                     rows={4}
                                     className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none"
