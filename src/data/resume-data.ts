@@ -7,15 +7,16 @@ export const RESUME_DATA = {
     "Motivated Software Engineering student with hands-on IT experience and strong foundations in database design, SQL, and computer networking.",
   summary:
     "Motivated Software Engineering student with hands-on IT experience and strong foundations in database design, SQL, and computer networking. Skilled in troubleshooting systems, data analysis with Power BI, and web development. Eager to apply technical skills and expand expertise in PostgreSQL, data synchronization, and enterprise-level database management.",
-  avatarUrl: "https://prince23140-lab.github.io/Portfolio/images/portrait-1.jpg",
-  personalWebsiteUrl: "https://princenziza.com",
+  // Updated for GitHub Pages
+  avatarUrl: "/Portfolio/images/portrait-1.jpg",
+  personalWebsiteUrl: "https://prince23140-lab.github.io/Portfolio",
   contact: {
     email: "princenziza23140@gmail.com",
     tel: "+250789752185",
     social: [
       {
         name: "GitHub",
-        url: "https://www.linkedin.com/in/nziza-prince-372106345/",
+        url: "https://github.com/prince23140-lab",
       },
       {
         name: "LinkedIn",
@@ -39,7 +40,7 @@ export const RESUME_DATA = {
   work: [
     {
       company: "NARADA Medical Clinic",
-      link: "#",
+      link: "https://prince23140-lab.github.io/Portfolio",
       badges: ["Kayonza, Rwanda"],
       title: "IT Assistant",
       start: "December 2022",
@@ -49,7 +50,7 @@ export const RESUME_DATA = {
     },
     {
       company: "Computer Innovation Technology",
-      link: "#",
+      link: "https://prince23140-lab.github.io/Portfolio",
       badges: ["Kayonza, Rwanda"],
       title: "IT Assistant",
       start: "August 2020",
@@ -128,13 +129,14 @@ export const RESUME_DATA = {
       date: "Jan 2026",
     },
   ],
+  // Updated image URLs for GitHub Pages
   images: [
-    "https://prince23140-lab.github.io/Portfolio/images/portrait-1.jpg",
-    "https://prince23140-lab.github.io/Portfolio/images/portrait-2.jpg",
-    "https://prince23140-lab.github.io/Portfolio/images/new-portrait-3.jpg",
-    "https://prince23140-lab.github.io/Portfolio/images/new-portrait-1.jpg",
-    "https://prince23140-lab.github.io/Portfolio/images/new-portrait-2.jpg",
-    "https://prince23140-lab.github.io/Portfolio/images/portrait-3.jpg",
-    "https://prince23140-lab.github.io/Portfolio/images/portrait-4.jpg",
+    "/Portfolio/images/new-portrait-1.jpg",
+    "/Portfolio/images/new-portrait-2.jpg",
+    "/Portfolio/images/new-portrait-3.jpg",
+    "/Portfolio/images/portrait-1.jpg",
+    "/Portfolio/images/portrait-2.jpg",
+    "/Portfolio/images/portrait-3.jpg",
+    "/Portfolio/images/portrait-4.jpg",
   ],
 };
