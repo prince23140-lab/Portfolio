@@ -1,6 +1,8 @@
 # Prince Nziza - Professional Portfolio
 
-A dynamic, premium portfolio website built with **Next.js 14**, **Tailwind CSS**, and **Framer Motion**. This project serves as a personal brand showcase, featuring a downloadable resume, an interactive gallery, and a responsive design that looks great on all devices.
+![Portfolio Preview](/public/images/portrait-1.jpg)
+
+A dynamic, premium portfolio and resume website built with **Next.js 14**, **Tailwind CSS**, and **Framer Motion**. This project serves as a personal brand showcase, featuring a downloadable resume, an interactive gallery, and a responsive design that looks great on all devices.
 
 ## 🚀 Features
 
