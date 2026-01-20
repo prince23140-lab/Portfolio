@@ -1,12 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
   output: "export",
   images: {
     unoptimized: true,
   },
+  basePath: '/Portfolio', // ← ADD THIS LINE
+  trailingSlash: true,    // ← Optional but helps
 };
 
 export default nextConfig;
