@@ -129,8 +129,8 @@ export const RESUME_DATA = {
     },
   ],
   images: [
-    "/images/new-portrait-1.jpg",
-    "/images/new-portrait-2.jpg",
+    "https://prince23140-lab.github.io/Portfolio/images/portrait-1.jpg",
+    "https://prince23140-lab.github.io/Portfolio/images/portrait-2.jpg",
     "/images/new-portrait-3.jpg",
     "/images/portrait-1.jpg",
     "/images/portrait-2.jpg",
